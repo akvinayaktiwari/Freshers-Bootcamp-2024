@@ -9,6 +9,7 @@ Order management system
 Manu admin panel
 Food status
 Bill of the food
+Open Kitchen
 
 ##  Non Functional Requirements
 
@@ -20,7 +21,6 @@ Bill of the food
 
 **Security** --> The data of the users of the webapp is so much important web app should protect the data so that it don't get disclosed to the competitors of the customer.
 
-**Accuracy** --> 
 
 
 
