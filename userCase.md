@@ -22,7 +22,7 @@ Open Kitchen
 **Security** --> The data of the users of the webapp is so much important web app should protect the data so that it don't get disclosed to the competitors of the customer.
 
 ## Use Case Diagram
-<img src="https://imgur.com/a/GySWzaH.png">
+<img src="https://raw.githubusercontent.com/akvinayaktiwari/Freshers-Bootcamp-2024/main/UserDiagram.png">
 
 
 
