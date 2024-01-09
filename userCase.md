@@ -17,7 +17,7 @@ Open Kitchen
 
 **Scalability** --> If user has a chain of cafés then the web app should work same and separatly for every outlets.
 
-** Reliability** --> If a end user is ordering some food and at the same the that item is sold out then the app should handle situation smoothly.
+**Reliability** --> If a end user is ordering some food and at the same the that item is sold out then the app should handle situation smoothly.
 
 **Security** --> The data of the users of the webapp is so much important web app should protect the data so that it don't get disclosed to the competitors of the customer.
 
