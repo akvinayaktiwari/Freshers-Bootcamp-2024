@@ -1,6 +1,35 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+class Requirement{
+    public:
+    vector<int> givenVector;
+    
+    vector<int> filter(bool* (*cond)){
+        vector<int> result;
+        for(auto element:givenString){
+            if(cond(element)){
+                result.push_back(element);
+            }
+        }
+        return result;
+    }
+};
+class Condition{
+    public:
+    bool startWithA(vector<int> givenString){
+        if(givenVector.at(0)=='A'){
+            return true;
+        }
+        return false;
+    }
+    // void displayOnTerminal(){
+    //     for(auto element:results){
+    //         cout<<element;
+    //     }
+    // }
+};
+
 class ConsoleDisplayController{
     private:
     string content;
