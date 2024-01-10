@@ -56,6 +56,10 @@ class StartWithStrategies{
     }
     
 };
+class SearchStrategy{
+        public:
+        virtual void invoke(string item)=0;
+}
 
 class StringListFilterController{
     public:
