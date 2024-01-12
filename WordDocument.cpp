@@ -4,6 +4,7 @@ using namespace std;
 class WordDocument{
     private :
     vector<DocumentPart*> documentParts;
+    public:
     void open(){
         return;
     }
