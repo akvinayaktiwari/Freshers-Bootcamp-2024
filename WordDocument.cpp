@@ -67,6 +67,7 @@ class Header :public DocumentPart{
 
 class Footer :public DocumentPart{
     public:
+    HtmlConvert htmlConvert;
     string text;
     void paint(){
         return;
@@ -74,10 +75,15 @@ class Footer :public DocumentPart{
     void save(){
         return;
     }
+    void Convert(){
+        HtmlConverter::convert(this);
+        return;
+    }
 };
 
 class Hypertext :public DocumentPart{
     public:
+    HtmlConvert htmlConvert;
     string orc;
     void paint(){
         return;
@@ -85,16 +91,25 @@ class Hypertext :public DocumentPart{
     void save(){
         return;
     }
+    void Convert(){
+        HtmlConverter::convert(this);
+        return;
+    }
 };
 
 class Paragraph :public DocumentPart{
     public:
+    HtmlConvert htmlConvert;
     string content;
     string lines;
     void paint(){
         return;
     }
     void save(){
+        return;
+    }
+    void Convert(){
+        HtmlConverter::convert(this);
         return;
     }
 };
