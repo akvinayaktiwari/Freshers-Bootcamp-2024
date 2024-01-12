@@ -3,7 +3,7 @@ using namespace std;
 
 class WordDocument{
     private :
-    vector<*DocumentPart> documentParts;
+    vector<DocumentPart*> documentParts;
     void open(){
         return;
     }
