@@ -3,14 +3,37 @@ using namespace std;
 
 class WordDocument{
     private :
-    vector<DocumentPart*> documentParts;
-    public:
+    vector<*DocumentPart> documentParts;
     void open(){
         return;
     }
     void save(){
         return;
     }
+};
+
+class IConverter{
+    public:
+    virtual void convert(Header header)=0;
+    virtual void convert(Footer footer)=0;
+    virtual void convert(Paragraph para)=0;  
+    virtual void convert(Hyperlink link)=0;  
+};
+
+class HtmlConverter : public IConverter{
+    public:
+    void convert(Header header){
+        return;
+    }
+    void convert(Footer footer){
+        return ;
+    }
+    void convert(Paragraph para){
+        return;
+    }
+    void convert(Hyperlink link){
+        return;
+    } 
 };
 
 class DocumentPart{
@@ -20,9 +43,13 @@ class DocumentPart{
     public:
     virtual void save()=0;
     virtual void paint()=0;
+    virtual void convert(IConverter iConverter)=0;
 }
 
 class Header :public DocumentPart{
+    private:
+    HtmlConvert htmlConvert;
+    string header;
     public:
     string title;
     void paint(){
@@ -31,6 +58,11 @@ class Header :public DocumentPart{
     void save(){
         return;
     }
+    void Convert(){
+        HtmlConverter::convert(this);
+        return;
+    }
+    
 };
 
 class Footer :public DocumentPart{
