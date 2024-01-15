@@ -30,7 +30,7 @@ class Thread{
     void subscribe(IObserver observer){
         return;
     }
-    void unsubscribe(IObserver){
+    void unsubscribe(IObserver observer){
         return;
     }
 };
