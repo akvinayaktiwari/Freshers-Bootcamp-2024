@@ -7,10 +7,14 @@ class Thread{
     string state;
     string priority;
     string culture;
+    void notify(){
+        return;
+    }
     public:
     void Thread(){
         this->state="Started";
     }
+    
     void start(){
         this->state="Started";
     }
@@ -23,7 +27,18 @@ class Thread{
     void suspended(){
         this->state="suspended";
     }
+    void subscribe(IObserver observer){
+        return;
+    }
+    void unsubscribe(IObserver){
+        return;
+    }
 };
+
+class IObserver(){
+    public:
+    virtual void update();
+}
 
 int main() {
   
