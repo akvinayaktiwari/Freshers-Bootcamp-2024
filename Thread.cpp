@@ -39,6 +39,12 @@ class IObserver(){
     public:
     virtual void update()=0;
 }
+class ConcreteObserver:public IObserver{
+    public:
+    void update(){
+        return;
+    }
+}
 
 int main() {
   
