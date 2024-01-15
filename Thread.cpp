@@ -37,7 +37,7 @@ class Thread{
 
 class IObserver(){
     public:
-    virtual void update();
+    virtual void update()=0;
 }
 
 int main() {
